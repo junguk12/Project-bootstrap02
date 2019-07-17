@@ -24,27 +24,32 @@ res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/typography02.html
 });
 
 router.get('/bootstrap03_byeolchan', function (req, res) {
-res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/typography03.html'));
+res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/buttons01.html'));
 //__dirname : It will resolve to your project folder.
 });
 
 router.get('/bootstrap04_byeolchan', function (req, res) {
-res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/typography04.html'));
+res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/buttons02.html'));
 //__dirname : It will resolve to your project folder.
 });
 
 router.get('/bootstrap05_byeolchan', function (req, res) {
-res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/typography05.html'));
+res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/collapse01.html'));
 //__dirname : It will resolve to your project folder.
 });
 
 router.get('/bootstrap06_byeolchan', function (req, res) {
-res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/typography06.html'));
+res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/image01.html'));
 //__dirname : It will resolve to your project folder.
 });
 
 router.get('/bootstrap07_byeolchan', function (req, res) {
-res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/typography07.html'));
+res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/table01.html'));
+//__dirname : It will resolve to your project folder.
+});
+
+router.get('/bootstrap07_byeolchan', function (req, res) {
+res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/table02.html'));
 //__dirname : It will resolve to your project folder.
 });
 
