@@ -14,7 +14,7 @@ res.sendFile(path.join(__dirname + '/index.html'));
 
 //static links for Byeolchan
 router.get('/bootstrap01_byeolchan', function (req, res) {
-res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/bootstrap01.html'));
+res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/typography01.html'));
 //__dirname : It will resolve to your project folder.
 });
     
