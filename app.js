@@ -28,6 +28,11 @@ res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/typography03.html
 //__dirname : It will resolve to your project folder.
 });
 
+router.get('/bootstrap04_byeolchan', function (req, res) {
+res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/typography04.html'));
+//__dirname : It will resolve to your project folder.
+});
+
 
 app.use('/', router);
 
