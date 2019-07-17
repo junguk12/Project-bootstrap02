@@ -22,7 +22,13 @@ router.get('/bootstrap02_byeolchan', function (req, res) {
 res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/typography02.html'));
 //__dirname : It will resolve to your project folder.
 });
-    
+
+router.get('/bootstrap03_byeolchan', function (req, res) {
+res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/typography03.html'));
+//__dirname : It will resolve to your project folder.
+});
+
+
 app.use('/', router);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
