@@ -58,7 +58,7 @@ router.get('/try_main_byeolchan', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('//typography01_byeolchan', function (req, res) {
+router.get('/typography01_byeolchan', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/typography01.html'));
     //__dirname : It will resolve to your project folder.
 });
