@@ -68,6 +68,26 @@ router.get('/table02_byeolchan', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/try_form01_byeolchan', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/try_form01.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/try_form02_byeolchan', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/try_form02.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/try_form03_byeolchan', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/try_form03.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/try_form04_byeolchan', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/try_form04.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 router.get('/try_main_byeolchan', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/try_main.html'));
     //__dirname : It will resolve to your project folder.
@@ -98,6 +118,27 @@ router.get('/action_input03', function (req, res) {
     console.log(req.query.email); //backend-part receives data
     res.send('Request parameters : ' + req.query.username + ', ' + req.query.text) //return received data to frontend in html format
 });
+
+router.get('/action_try_form01', function (req, res) {
+    console.log(req.query.email); //backend-part receives data
+    res.send('Request parameters : ' + req.query.username + ', ' + req.query.text) //return received data to frontend in html format
+});
+
+router.get('/action_try_form02', function (req, res) {
+    console.log(req.query.email); //backend-part receives data
+    res.send('Request parameters : ' + req.query.username + ', ' + req.query.text) //return received data to frontend in html format
+});
+
+router.get('/action_try_form03', function (req, res) {
+    console.log(req.query.email); //backend-part receives data
+    res.send('Request parameters : ' + req.query.username + ', ' + req.query.text) //return received data to frontend in html format
+});
+
+router.get('/action_try_form04', function (req, res) {
+    console.log(req.query.email); //backend-part receives data
+    res.send('Request parameters : ' + req.query.username + ', ' + req.query.text) //return received data to frontend in html format
+});
+
 
 app.use('/', router);
 
