@@ -18,14 +18,27 @@
 
 <body>
     <div class="container">
-        <div class="figure">
-            <img src="./image/Penguins.jpg" class="figure-img img-fluid rounded" alt="Penguins">
-            <div class="figure-caption text-center">A caption ... image</div>
-        </div>
+        <form action="/action_input03">
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" name="username">
+            </div>
+            <div class="form-group">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input">
+                    <label class="custom-control-label">Toggle me</label>
+                </div>
+            </div>
+            <div class="form-group input-group">
+                <input type="text" class="form-control" placeholder="Something clever..." name="text">
+                <div class="input-group-prepend">
+                    <button class="btn btn-primary" type="submit">OK</button>
+                </div>
+            </div>
+        </form>
     </div>
-
-
-
 </body>
 
 </html>

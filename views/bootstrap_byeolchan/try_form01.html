@@ -18,14 +18,24 @@
 
 <body>
     <div class="container">
-        <div class="figure">
-            <img src="./image/Penguins.jpg" class="figure-img img-fluid rounded" alt="Penguins">
-            <div class="figure-caption text-center">A caption ... image</div>
-        </div>
+        <form action="/action_try_form01">
+            <div class="form-group">
+                <label for="email" class="font-weight-bold">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password" class="font-weight-bold">Password:</label>
+                <input type="password" class="form-control" placeholder="Password" name="password">
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <label>
+                        <input type="checkbox" class="form-check-input" name>Remember me</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-white border">Submit</button>
+        </form>
     </div>
-
-
-
 </body>
 
 </html>

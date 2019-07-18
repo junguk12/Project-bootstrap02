@@ -1,3 +1,4 @@
+<!--need to be fixed-->
 <!DOCTYPE html>
 <!--HTML-->
 <html>
@@ -18,14 +19,25 @@
 
 <body>
     <div class="container">
-        <div class="figure">
-            <img src="./image/Penguins.jpg" class="figure-img img-fluid rounded" alt="Penguins">
-            <div class="figure-caption text-center">A caption ... image</div>
-        </div>
+        <form action="/action_try_form04">
+            <div class="form-group">
+                <label for="text" class="font-weight-bold">Disabled</label>
+                <input type="text" class="form-control" placeholder="Disabled input here..." disabled>
+            </div>
+            <div class="form-group">
+                <label for="text" class="font-weight-bold text-success">Success</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="text" class="font-weight-bold text-warning">Warning</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="text" class="font-weight-bold text-danger">Error</label>
+                <input type="text" class="form-control">
+            </div>
+        </form>
     </div>
-
-
-
 </body>
 
 </html>
