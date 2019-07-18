@@ -43,6 +43,21 @@ router.get('/image01_byeolchan', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/inputs01_byeolchan', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/inputs01.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/inputs02_byeolchan', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/inputs02.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/inputs03_byeolchan', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/inputs03.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 router.get('/table01_byeolchan', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/table01.html'));
     //__dirname : It will resolve to your project folder.
@@ -66,6 +81,22 @@ router.get('/typography01_byeolchan', function (req, res) {
 router.get('/typography02_byeolchan', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/bootstrap_byeolchan/typography02.html'));
     //__dirname : It will resolve to your project folder.
+});
+
+
+router.get('/action_input01', function (req, res) {
+    console.log(req.query.email); //backend-part receives data
+    res.send('Request parameters : ' + req.query.email) //return received data to frontend in html format
+});
+
+router.get('/action_input02', function (req, res) {
+    console.log(req.query.email); //backend-part receives data
+    res.send('Request parameters : ' + req.query.email) //return received data to frontend in html format
+});
+
+router.get('/action_input03', function (req, res) {
+    console.log(req.query.email); //backend-part receives data
+    res.send('Request parameters : ' + req.query.username + ', ' + req.query.text) //return received data to frontend in html format
 });
 
 app.use('/', router);
