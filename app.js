@@ -126,12 +126,12 @@ router.get('/action_try_form01', function (req, res) {
 
 router.get('/action_try_form02', function (req, res) {
     console.log(req.query.email, req.query.passwprd, req.query.text); //backend-part receives data
-    res.send('Request parameters : ' + req.query.email + ', ' + req.query.password + req.query.text) //return received data to frontend in html format
+    res.send('Request parameters : ' + req.query.email + ', ' + req.query.password + ', ' + req.query.text) //return received data to frontend in html format
 });
 
 router.get('/action_try_form03', function (req, res) {
-    console.log(req.query.email); //backend-part receives data
-    res.send('Request parameters : ' + req.query.username + ', ' + req.query.text) //return received data to frontend in html format
+    console.log(req.query.numbers); //backend-part receives data
+    res.send('Request parameters : ' + req.query.numbers) //return received data to frontend in html format
 });
 
 router.get('/action_try_form04', function (req, res) {
